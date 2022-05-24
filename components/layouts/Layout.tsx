@@ -9,7 +9,7 @@ interface Props {
   children: JSX.Element;
 }
 
-export const Layout: FC<Props> = ({ title = 'OpenJira ', children }: Props) => {
+export const Layout: FC<Props> = ({ title = 'OpenJira ', children }) => {
   return (
     <Box sx={{ flexFlow: 1 }}>
       <Head>

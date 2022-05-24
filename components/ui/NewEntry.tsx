@@ -1,8 +1,9 @@
 import { ChangeEvent, useContext, useState } from 'react';
-
 import { Box, Button, TextField } from '@mui/material';
+
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
+
 import { EntriesContext } from '../../context/entries';
 import { UIContext } from '../../context/ui';
 
@@ -31,6 +32,7 @@ export const NewEntry = () => {
         <>
           <TextField
             sx={{ marginTop: 2, marginBottom: 1 }}
+            rows={4}
             fullWidth
             placeholder="Nueva entrada"
             autoFocus
